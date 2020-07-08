@@ -1,4 +1,4 @@
-a.active {
+a.active:hover {
   color: #000000 !important;
   text-decoration: underline !important;
 }

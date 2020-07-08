@@ -8,15 +8,16 @@ class Main extends Component {
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
-              <a className="navbar-brand" href="#">
+              <Link to="/" className="active navbar-brand">
                 Scotch Cars
-              </a>
+              </Link>
             </div>
             <div
               className="collapse navbar-collapse"
               id="bs-example-navbar-collapse-1"
             >
               <ul className="nav navbar-nav">
+                {/* Change from a to Link */}
                 <li>
                   <Link to="/" className="active">
                     Home

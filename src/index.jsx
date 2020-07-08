@@ -83,9 +83,9 @@ render(
   <BrowserRouter>
     <Main />
 
-    <Route path="/cars" component={Car} data={data} />
+    <Route exact path="/cars" component={Car} data={data} />
     <Route path="/cars/:id" component={CarDetail} data={data} />
-    <Route path="/about" component={About} />
+    <Route exact path="/about" component={About} />
     <Route exact path="/" component={Home} />
   </BrowserRouter>,
   document.getElementById("container")
