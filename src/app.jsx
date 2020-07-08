@@ -62,29 +62,19 @@ const data = [
   },
 ];
 
-{
-  /* <Switch>
-  <Route exact path="/">
-    <Home />
-  </Route>
-  <Route path="/cars">
-    <Car />
-  </Route>
-  <Route path="/cars/:id">
-    <CarDetail />
-  </Route>
-  <Route path="/about">
-    <About />
-  </Route>
-</Switch>; */
-}
-
 render(
   <BrowserRouter>
-    <Main />
-
-    <Route exact path="/cars" component={Car} data={data} />
-    <Route path="/cars/:id" component={CarDetail} data={data} />
+    <Main data={data} />
+    <Route
+      exact
+      path="/cars"
+      render={(props) => <Car {...props} data={data} />}
+    />
+    <Route
+      exact
+      path="/cars/:id"
+      render={(props) => <CarDetail {...props} data={data} />}
+    />
     <Route exact path="/about" component={About} />
     <Route exact path="/" component={Home} />
   </BrowserRouter>,
