@@ -1,0 +1,10 @@
+a.active {
+  color: #000000 !important;
+  text-decoration: underline !important;
+}
+h1 {
+  color: rgb(57, 3, 2) !important;
+}
+body {
+  margin: 50px !important;
+}
